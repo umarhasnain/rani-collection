@@ -1,9 +1,9 @@
-// 'use client'
-import SignUp from "@/components/SignUp.jsx";
-import SignIn from "../components/SignIn.jsx"; // Assuming SignIn component handles both sign-in and sign-up forms
+'use client'
+import SignUp from "@/components/SignUp";
+import SignIn from "@/components/SignUp";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-export default function Home() {
+export default function CreateAccount() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-blue from-blue-500 to-teal-500 p-4">
       <div className="w-full max-w-md bg-white shadow-2xl rounded-lg overflow-hidden">
@@ -29,7 +29,6 @@ export default function Home() {
             </TabsContent>
             <TabsContent value="sign-up">
               <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">Create an Account</h2>
-              {/* Assuming SignIn component handles signup too, or you can create a separate SignUp component */}
               <SignUp />
             </TabsContent>
           </div>
